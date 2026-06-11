@@ -1,0 +1,23 @@
+{
+  "name": "my-monorepo",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "qa-app"
+  ],
+  "scripts": {
+    "qa-app": "yarn workspace qa-app dev",
+    "qa-app:build": "yarn workspace qa-app build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThuyVan032004/qa-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ThuyVan032004/qa-app/issues"
+  },
+  "homepage": "https://github.com/ThuyVan032004/qa-app#readme",
+  "devDependencies": {
+    "typescript": "^6.0.3"
+  }
+}

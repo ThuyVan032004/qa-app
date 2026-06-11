@@ -1,0 +1,5 @@
+PROJECT_INIT.md
+node_modules
+dist
+.env
+package-lock.json

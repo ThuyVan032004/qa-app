@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "ignoreDeprecations": "6.0",
+    "baseUrl": ".",
+    "paths": {
+      "@my-monorepo/ui": ["packages/ui/src"],
+      "@my-monorepo/utils": ["packages/utils/src"],
+      "@qa-app/*": ["qa-app/src/*"]
+    },
+    // Base compiler options for the monorepo
+    "target": "es2023",
+    "module": "esnext",
+    "lib": ["ES2023", "DOM"],
+    "moduleResolution": "bundler",
+    "skipLibCheck": true,
+
+    // Source and output
+    "sourceMap": true,
+    "strict": true,
+    "isolatedModules": true,
+
+    // Module syntax
+    "verbatimModuleSyntax": true,
+    "moduleDetection": "force",
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+
+    // Code quality
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "exactOptionalPropertyTypes": false
+  },
+  "include": ["qa-app/**/*", "packages/**/*"]
+}
